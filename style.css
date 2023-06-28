@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    min-height: 500px;
+}
+
+.card{
+    width: 300px;
+    height: 370px;
+    padding: 40px;
+    align-content: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.card:first-child {
+    background-color:  hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3){
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 20px 0px;
+}
+
+.card p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card button {
+    margin: 30px 0px;
+    padding: 0.7rem;
+    width: 150px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card:first-child button {
+    color: hsl(31, 77%, 52%);
+}
+.card:first-child button:hover {
+    border: 3px solid hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.card:nth-child(2) button {
+    color: hsl(184, 100%, 22%);
+}
+.card:nth-child(2) button:hover {
+    border: 3px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.card:nth-child(3) button {
+    color: hsl(179, 100%, 13%);
+}
+.card:nth-child(3) button:hover {
+    border: 3px solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (min-width: 375px) {
+    .card:first-child {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .card:nth-child(3) {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .card {
+        height: 400px;
+    }
+    .card:first-child {
+        border-radius: 10px 0px 0px 10px;
+    }
+    .card:nth-child(3) {
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .card button {
+        margin-top: 70px;
+    }
+}
+
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
